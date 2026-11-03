@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#083f34">
+<meta name="robots" content="noindex,nofollow">
+<title>Replies — Sasani & Dinith</title><link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/rsvp.css">
+<script src="/rsvp.js" defer></script>
+</head>
+<body>
+<main class="shell">
+<p id="loading" class="loading">Loading replies…</p>
+<section id="login-panel" class="card login" hidden>
+<a class="mark" href="/">S<span>&</span>D</a>
+<p class="eyebrow">Private</p>
+<h1>Replies</h1>
+<p class="intro">Sign in to see who is coming.</p>
+<form id="login-form">
+<label for="username">Username</label>
+<input id="username" name="username" autocomplete="username" required>
+<label for="password">Password</label>
+<input id="password" name="password" type="password" autocomplete="current-password" required>
+<p id="login-status" role="status" aria-live="polite"></p>
+<button class="submit" type="submit">View replies <span>⟶</span></button>
+</form>
+</section>
+<section id="board" hidden>
+<div class="board-head">
+<div>
+<a class="mark" href="/">S<span>&</span>D</a>
+<p class="eyebrow">Guest list</p>
+<h1>Replies</h1>
+</div>
+<div class="board-actions">
+<button id="refresh" type="button">Refresh</button>
+<button id="logout" type="button">Log out</button>
+</div>
+</div>
+<dl class="stats">
+<div><dt>Replies</dt><dd id="count-all">0</dd></div>
+<div><dt>Accepts</dt><dd id="count-yes">0</dd></div>
+<div><dt>Declines</dt><dd id="count-no">0</dd></div>
+<div><dt>Guests coming</dt><dd id="count-guests">0</dd></div>
+</dl>
+<p id="board-status" role="status" aria-live="polite"></p>
+<div id="rows"></div>
+</section>
+</main>
+</body>
+</html>
