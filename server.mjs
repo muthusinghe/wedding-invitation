@@ -8,7 +8,7 @@ import guests from './api/guests.js';
 
 const root = path.resolve('public');
 const routes = {'/api/rsvp': rsvp, '/api/login': login, '/api/logout': logout, '/api/guests': guests};
-const types = {'.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.webp': 'image/webp', '.png': 'image/png', '.svg': 'image/svg+xml', '.ics': 'text/calendar; charset=utf-8'};
+const types = {'.html': 'text/html; charset=utf-8', '.css': 'text/css; charset=utf-8', '.js': 'text/javascript; charset=utf-8', '.webp': 'image/webp', '.png': 'image/png', '.jpg': 'image/jpeg', '.svg': 'image/svg+xml', '.ics': 'text/calendar; charset=utf-8'};
 
 function safeFile(pathname) {
   if (pathname.includes('\0') || pathname.includes('\\')) return null;
